@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #00bfa5;
+    transform: translateY(-2px);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contact-links a:hover {
+    transform: scale(1.2);
+    color: #00bfa5;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Section Styles */
+.section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.fade-in {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    background-color: #00bfa5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #007d6f;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 3rem auto;
+    max-width: 800px;
+}
+
+.contact-info, .contact-form {
+    margin-top: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #00bfa5;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-links {
+    margin: 1rem 0;
+}
+
+.footer-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    transform: scale(1.2);
+    color: #00bfa5;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.footer-content .heart {
+    color: #ff4d4d;
+    font-size: 1.2rem;
+}html {
+    scroll-behavior: smooth; /* Ensure smooth scrolling */
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header, footer {
+    position: relative;
+    z-index: 1;
+}
+
+.scroll-container {
+    overflow: hidden; /* Prevent overflow within the container */
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
